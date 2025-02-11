@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 페이지 크기를 100%로 설정 */
+#page {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+ 
+
+/* 메인 배너 설정 */
+.main-banner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background: var(--tj-white);    
+}
+
+/* 비디오 설정 */
+.main-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 비디오가 부모 요소에 꽉 차도록 설정 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* 비디오 아래쪽에 그라디언트 오버레이 */
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; /* 아래쪽 20% 부분에 적용 */
+    background: linear-gradient(transparent, var(--tj-white));
+    z-index: 2;
+}
+
+/* 스크롤 안내 텍스트 */
+.scrool {
+    position: absolute;
+    bottom: 10%; /* 그라디언트 위쪽 중앙 */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px; /* 적당한 크기 */
+    font-family: var(--font-EF_watermelonSalad);
+    color: var(--tj-white);
+    z-index: 3;
+    text-align: center;
+    background: transparent;
+}
+
+/* 스크롤 안내 화살표 */
+.scrool::after {
+    content: "↓"; /* 아래 방향 화살표 */
+    display: block;
+    font-size: 20px; /* 화살표 크기 */
+    color: var(--tj-white);
+    margin-top: 5px; /* 글자와 화살표 간격 */
+}
+
+/* 로고와 햄버거 메뉴를 비디오 위에 배치 */
+.main-logo, .hamburger-menu {
+    position: absolute;
+    top: 1rem;  /* 상단 정렬 */
+    z-index: 10;
+    background: transparent;
+}
+
+/* 로고 위치 (왼쪽 상단) */
+.main-logo {
+    left: 1rem;
+}
+
+/* 햄버거 메뉴 위치 (오른쪽 상단) */
+.hamburger-menu {
+    right: 1rem;
+}
+
+/* 로고와 햄버거 메뉴 크기 조정 */
+.main-logo img, .hamburger-menu img {
+    margin: 0;
+    padding: 0;
+    height: 1.9rem;  /* 동일한 높이로 맞춤 */
+    background: transparent;
+} 
+
+video {
+  height: 38rem;
+  object-fit: contain;
+  text-align: center;
+  align-items: center;
+  overflow: hidden; 
+} 
+
+
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px) {
+  video {
+    height: 100%;
+    object-fit: cover;
+  } 
+  .main-logo {
+    display: none;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .main-banner {
+    height: 80vh;
+  }
+}
+
+/* TODO: 데스크탑 */
+@media screen and (min-width: 1024px) {
+  .main-banner {
+    height: 80vh;
+    margin: 0 auto;
+  }
+  video {
+    height: 100%;
+    object-fit: fill;
+  }
+}

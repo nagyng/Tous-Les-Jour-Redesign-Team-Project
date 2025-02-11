@@ -1,0 +1,488 @@
+#page {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 나경: 수정 float 추가 */
+.news {
+    float: left;
+    background-color: var(--tj-green);
+    width: 100vw;
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+/* 나경: 수정  백그라운드 색상 그린 추가 */
+.news-card-con {
+    background-color: var(--tj-green);
+}
+
+/* 나경: 수정  백그라운드 색상 그린 추가 */
+.latest {
+    background-color: var(--tj-green);
+    color: var(--tj-white);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3rem 0 2rem 0; 
+}  
+.news-card { 
+    margin: 0 auto 2rem auto;
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.news-card>.new-img>img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+/* 나경: 수정 백그라운드 색상 화이트 추가
+    한글 폰트 추가  */
+.news-coment {
+    padding: 1rem 0 2rem 0;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    background-color: white;
+    font-family: var(--font-EF_watermelonSalad);
+}
+
+.news-coment:hover {
+    color: var(--tj-orange);
+}
+
+/* 나경: 한글 폰트 추가 */
+.news-button {
+    background-color: var(--tj-orange);
+    width: 8rem;
+    font-size: 15px;
+    height: 2.5rem;
+    border-radius: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto 3rem auto;
+    font-family: var(--font-EF_watermelonSalad);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out,
+      border-radius 0.3s ease-in-out;
+}
+
+.news-button:hover {
+    background-color: var(--tj-white);
+    border:2px solid var(--tj-orange);
+    color: var(--tj-orange);
+}
+
+
+footer {
+    width: 100%;
+    height: auto;
+    /* padding-bottom: 7rem; */
+    background-color: var(--tj-white);
+    color: var(--tj-green);
+    font-size: 12px;
+}
+
+.footer-logo {
+    width: 130px;
+    height: 200px;
+    padding: 3rem 0 0 1rem;
+}
+
+.footer-logo>img {
+    width: 100%;
+    height: auto;
+}
+
+.fnb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+    padding-left: 7rem;  
+}
+ 
+/* 나경: 한글 폰트 추가 */
+.fnb-li {
+    text-align: right; 
+    font-family: var(--font-EF_watermelonSalad);
+} 
+ 
+.li-title {
+    font-weight: bold; 
+}
+
+.contact { 
+    width: 100%;
+    height: 22vh;
+    padding-left: 1rem;
+}
+
+/* 나경: 한글 폰트 추가 */
+.contact>ul>li {
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-EF_watermelonSalad);
+}
+
+.contact>ul>li>img {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.footer-line {
+    width: 100%;
+    /* 선의 길이 */
+    height: 1.3px;
+    /* 선의 두께 */
+    background-color: var(--tj-brown);
+    /* 선 색상 */
+    margin: 0 auto;
+    /* 상하 여백 조정 및 중앙 정렬 */
+}
+
+.copyright {
+    clear: both;
+    padding: 1rem 1rem 3rem 1rem;
+    width: 100%;
+    height: auto;
+    color: var(--tj-brown);
+    font-size: 12px;
+}
+
+.copyright>ul>li {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-family: var(--font-Carrois_Gothic_SC);
+}
+
+.copyright>ul>li>img {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+
+/* 태블릿 */
+
+@media screen and (min-width: 768px) {
+
+    .news {
+        width: 100%;
+        height: auto;
+        padding-bottom: 6rem;
+    }
+
+    .news-card-con {
+        width: 100%;
+        display: flex;
+        justify-items: center;
+    }
+
+    .news-card {
+        width: 30%;
+        display: inline-block;
+
+
+    }
+
+    .latest {
+        font-size: 20px;
+    }
+
+    .news-coment {
+        font-size: 12px;
+    }
+
+    .news-button {
+        margin: 0 auto;
+        font-size: 20px;
+        height: 3rem;
+        width: 10rem;
+        border-radius: 2rem;
+    }
+
+
+    footer {
+        font-size: 19px;
+        /* padding-bottom: 25rem; */
+        position: relative;
+        padding-top: 10rem;
+    }
+
+    .footer-logo {
+        width: 25%;
+        height: 200px;
+        padding: 5rem 0 0 3rem;
+        display: inline-block;
+        position: absolute;
+        top: 80px;
+    }
+
+    .footer-logo>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .fnb {
+        gap: 3rem;
+        padding: 0;
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        padding-right: 2rem;
+    }
+
+    .fnb-li {
+        text-align: right;
+        width: 30%;
+
+    }
+
+    .li-title {
+        font-weight: bold;
+    }
+
+    /* todo: pc 주소이동(위로) */
+
+    /* 나경: 수정 겹침 현상 해결 
+        margin top 3rem */ 
+    .contact {
+        width: 100%;
+        height: auto;
+        padding-left: 2rem;
+        padding-bottom: 3rem;
+        position: absolute;
+        top: 350px;
+        left: 0;
+        width: 100%;
+        margin-top: 3rem; 
+    }
+
+    .contact>ul>li {
+        line-height: 3rem;
+
+    }
+
+    .contact>ul>li>img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+
+    /* 나경: 수정 margin-top 확대 */
+    .footer-line {
+        width: 100%;
+        /* 선의 길이 */
+        margin-top: 20rem;
+        /* 상하 여백 조정 및 중앙 정렬 */
+    }
+
+
+    .copyright {
+        padding-top: 2rem;
+        /* padding-bottom: 20rem; */
+        padding-left: 2rem;
+        width: 100%;
+        height: auto;
+        font-size: 19px;
+    }
+
+
+
+    .copyright>ul>li>img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+
+}
+
+/* 피씨 */
+
+@media screen and (min-width: 1024px) {
+
+    .news {
+        width: 100%;
+        height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        /* padding-bottom: 15rem; */
+        padding-top: 15rem;
+    }
+
+
+    .latest {
+        font-size: 50px;
+        padding-bottom: 15rem;
+    }
+
+
+    .news-card-con {
+        width: 100%;
+        display: flex;
+        justify-items: center;
+    }
+
+    .latest {
+        font-size: 20px;
+    }
+
+    .news-card {
+        width: 30%;
+        display: inline-block;
+        border-radius: 5rem;
+
+    }
+
+    .news-coment {
+        font-size: 25px;
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+    }
+
+    .news-button {
+        margin: 18rem auto 20rem auto;
+        width: 10rem;
+        height: 3rem;
+        font-size: 20px;
+        border-radius: 2rem;
+
+    }
+
+    footer {
+        font-size: 16px;
+        /* padding-bottom: 25rem; */
+        position: relative;
+        padding-top: 10rem;
+    }
+
+
+    .footer-logo {
+        width: 10%;
+        height: 150px;
+        display: inline-block;
+        position: absolute;
+        top: 80px;
+        margin-left: 3%;
+    }
+
+    .footer-logo>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .fnb {
+        gap: 3rem;
+        padding: 0;
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        padding-right: 5%;
+    }
+
+    .fnb-li {
+        text-align: right;
+        width: 30%;
+        line-height: 3rem;
+
+    }
+
+    .li-title {
+        font-weight: bold;
+        font-size: 22;
+    }
+
+    /* 나경: 수정 겹침 현상 해결 
+        margin top 10rem */ 
+    .contact {
+        padding-top: 2rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: auto;
+        padding-bottom: 3rem;
+        margin-top: 10rem; 
+    }
+
+    .contact>ul>li {
+        line-height: 3rem;
+
+    }
+
+    .contact>ul>li>img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    /* todo: pc 주소이동(marker 옆으로) */
+    .contact>ul>.li-marker1 {
+        position: absolute;
+        top: 4.2rem;
+        left: 30rem;
+    }
+
+    .contact>ul>.li-marker2 {
+        position: absolute;
+        top: 7.2rem;
+        left: 30rem;
+    }
+
+    /* todo: pc 주소이동(help 옆으로) */
+
+    .fnb-li>ul>.li-help1 {
+        position: absolute;
+        top: 16rem;
+        right: 28rem;
+    }
+
+    .fnb-li>ul>.li-help2 {
+        position: absolute;
+        top: 19rem;
+        right: 28rem;
+    }
+
+    .fnb-li>ul>.li-help3 {
+        position: absolute;
+        top: 22rem;
+        right: 28rem;
+    }
+
+    /* 나경: margin-top 수정 */
+    .footer-line {
+        width: 90%;
+        /* 선의 길이 */
+        margin-top: 15rem;
+        /* 상하 여백 조정 및 중앙 정렬 */
+    }
+
+    .copyright {
+        /* padding-bottom: 20rem; */
+        padding-left: 5%;
+        padding-right: 5%;
+        height: auto;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;  
+    }
+
+
+    .copyright>ul>li>img {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 3rem;
+    }
+
+
+}

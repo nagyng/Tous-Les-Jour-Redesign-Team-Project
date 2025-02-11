@@ -1,0 +1,164 @@
+#page {
+    /* width: 100vw; margin: 0 auto;   */
+}
+
+/* 나경: 한글 폰트 추가 & 색상을 지정색으로 변경 
+        position relative 추가 
+        height 추가 
+        .button 을 .button_maejang 으로 변경 (겹침 방지) 
+        기기별 폰트 사이즈 변경 
+        */   
+.content-box {
+    position: relative;
+    margin: 0 auto;
+    width: 100%; 
+    height: 70vh;
+    font-family: var(--font-EF_watermelonSalad);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-box > img { 
+    width: 100%; height: 100%; 
+}
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* 나경: css 추가 */
+.p1, .p2, .p3 {
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+
+}
+/* 나경: 영문 폰트 추가 */
+.content-box > .p1{
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    color: white;
+    /* font-size: 25px; */
+    font-weight: bold;
+    font-family: "Carrois Gothic SC", serif;
+}
+.content-box > .p2{
+    position: absolute;
+    left: 15%;
+    top: 38%;
+    text-align: center;
+    color: white;
+    /* font-size: 20px; */
+}
+.content-box > .p3{
+    position: absolute;
+    left: 20%;
+    top: 55%;
+    text-align: center;
+    color: white;
+    /* font-size: 20px; */
+    font-weight: bold;
+}
+.button_maejang{
+    background-color: var(--tj-orange) ;
+    color: white;
+    font-size: 15px ;
+    height:2.5rem;
+    font-weight: bolder;
+    border: 2px solid var(--tj-orange);
+    border-radius: 2rem;
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    font-family: var(--font-EF_watermelonSalad);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out,
+      border-radius 0.3s ease-in-out;
+}
+.button_maejang:hover {
+    background-color: var(--tj-white);
+    border:2px solid var(--tj-orange);
+    color: var(--tj-orange);
+  }  
+
+
+@media screen and (min-width: 768px) {
+    .content-box > .p1{
+        position: absolute;
+        left: 30%;
+        top: 20%;
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .content-box > .p2{
+        position: absolute;
+        left: 11%;
+        top: 32%;
+        text-align: center;
+        color: white;
+        font-size: 35px;
+    }
+    .content-box > .p3{
+        position: absolute;
+        left: 16%;
+        top: 57%;
+        text-align: center;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .button_maejang{
+        font-size: 20px ;
+        border-radius: 2rem;
+        height: 3rem;
+        padding: 10px 30px 20px 30px;
+        position: absolute;
+        left: 31%;
+        top: 75%;
+      }
+}
+@media screen and (min-width: 1024px) { 
+    
+.content-box { 
+    width: 100%;
+    height: 99vh;
+
+}
+    .content-box > .p1{
+        position: absolute;
+        left: 40%;
+        top: 25%;
+        color: white;
+        font-size: 70px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .content-box > .p2{
+        position: absolute;
+        left:32.5%;
+        top: 35%;
+        line-height: 4rem;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
+    .content-box > .p3{
+        position: absolute;
+        left: 35%;
+        top: 65%;
+        line-height: 4rem;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .button_maejang{
+        padding: 12px 50px 20px 50px;
+        position: absolute;
+        left: 41.5%;
+        top: 90%;
+      }
+}

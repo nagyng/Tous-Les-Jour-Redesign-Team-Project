@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+/* 한글폰트 추가 */
+@font-face {
+    font-family: 'EF_watermelonSalad';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_watermelonSalad.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}  
+/* 영문 폰트 추가 */
+body { 
+  font-family: "Carrois Gothic SC", serif;
+}
+
+:root {
+
+    /* 폰트 */ 
+    --font-EF_watermelonSalad: 'EF_watermelonSalad', sans-serif;
+    --font-Carrois_Gothic_SC: "Carrois Gothic SC", serif;
+
+    /* 뚜레쥬르 대표색 */
+    --tj-green: #365442;
+    --tj-brown: #B39171;
+    --tj-white: #F5EDE5;
+    --tj-orange: #ED6C24;
+ 
+    /* Color styles */
+    --black: rgba(0, 0, 0, 1);
+    --grayscale-90: rgba(28, 28, 30, 1);
+    --grayscale-80: rgba(44, 44, 46, 1);
+    --grayscale-70: rgba(54, 54, 57, 1);
+    --grayscale-60: rgba(72, 72, 74, 1);
+    --grayscale-50: rgba(99, 99, 102, 1);
+    --grayscale-40: rgba(142, 142, 147, 1);
+    --grayscale-30: rgba(174, 174, 178, 1);
+    --grayscale-20: rgba(198, 198, 198, 1);
+    --grayscale-10: rgba(244, 244, 244, 1);
+    --white: rgba(255, 255, 255, 1);
+    --blue-light-10: rgba(233, 241, 255, 1);
+    --blue-light-20: rgba(202, 222, 255, 1);
+    --blue-light-30: rgba(15, 98, 254, 1);
+    --blue-light-40: rgba(15, 86, 219, 1);
+    --blue-light-50: rgba(8, 71, 189, 1);
+    --blue-dark-10: rgba(69, 137, 255, 1);
+    --blue-dark-20: rgba(39, 103, 221, 1);
+    --blue-dark-30: rgba(27, 79, 175, 1);
+    --blue-dark-40: rgba(36, 50, 75, 1);
+    --blue-dark-50: rgba(32, 39, 52, 1);
+    --red-light-30: rgba(218, 30, 40, 1);
+    --red-light-40: rgba(186, 27, 35, 1);
+    --red-light-50: rgba(117, 14, 19, 1);
+    --red-dark-30: rgba(198, 52, 60, 1);
+    --red-dark-40: rgba(161, 43, 49, 1);
+    --red-dark-50: rgba(125, 27, 32, 1);
+    --green-light-30: rgba(52, 199, 89, 1);
+    --green-light-40: rgba(34, 163, 67, 1);
+    --green-dark-30: rgba(91, 189, 116, 1);
+    --green-dark-40: rgba(70, 149, 90, 1);
+
+    /* Text-size styles */
+    --h1: 36px;
+    --h2: 24px;
+    --h3: 18px;
+    --h4: 16px;
+    --body: 14px;
+    --button: 14px;
+    --caption-1: 12px;
+    --caption-2: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--tj-white);
+} 
+#page {
+  width: 99vw;
+  height: 99vh;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+
+a {text-decoration: none;color: var(--black);
+  box-sizing: border-box;}
+li {display: block; list-style-type: none;}

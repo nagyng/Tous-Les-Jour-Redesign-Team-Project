@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  background-color: var(--tj-white);
+}   
+
+/* TODO: 모바일 */
+/* TODO: 대메뉴(GNB) */ 
+nav {
+  position: absolute; /* 절대 위치 */
+  top: 20px; /* 상단 여백 */
+  left: 50%; /* 가운데 정렬 */
+  transform: translateX(-50%); /* 가운데 정렬 */
+  width: 60%;
+  height: 3rem; 
+  justify-content: center; /* 메뉴와 로고 중앙 정렬 */
+  align-items: center; /* 세로 가운데 정렬 */
+  background-color: var(--tj-green);
+  border-radius: 50px;
+  /* padding: 0 20px; */
+  z-index: 10; /* 비디오 위에 배치 */
+  display: none; /* 모바일에서는 안보이게 하기 */
+  font-family: var(--font-EF_watermelonSalad);
+  font-weight: bolder;
+}
+
+/* 로고 */
+.fab img {
+  width: 2rem;
+}
+.fac img {
+  height: 2rem;
+}
+.fab {
+  position: absolute;
+  left: 20rem;
+  top: 25px;
+} /* 햄버거메뉴 좌표이동 왼쪽상단 */
+.fac {
+  /* position: absolute; */
+  left: 1rem;
+  top: 1.5rem;
+} /* 로고이미지 좌표이동 오른쪽상단 */
+
+/* TODO: 빵식이  */
+/* 빵식이 */
+.bbangsik {
+  text-align: center;
+  margin: auto;
+  padding: 5rem 0;
+}
+
+/* TODO: 아이콘 컨테이너 설정 */ 
+.content-icon {
+  display: flex;
+  flex-wrap: wrap; /* 줄바꿈 가능하도록 설정 */
+  justify-content: center; /* 중앙 정렬 */
+  gap: 10px; /* 아이콘 간 간격 */
+  max-width: 90%; /* 화면 좌우 여유 공간 확보 */
+  margin: auto auto 4rem auto;
+  position: relative; /* hover 효과가 개별 적용되도록 설정 */
+}
+
+/* 아이콘 개별 박스 설정 */
+.content-icon-icons {
+  width: calc(20% - 10px); /* 한 줄에 5개씩 정렬 */
+  aspect-ratio: 1 / 1; /* 정사각형 유지 */
+  border: 1.5px solid var(--tj-brown);
+  border-radius: 20px; /* 뭉툭한 모양 */
+  overflow: hidden; /* 이미지가 둥근 테두리 밖으로 나가지 않도록 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tj-white);
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative; /* 개별 아이콘에 hover 적용 */
+  tabindex: 0; /* focus가 가능하도록 설정 */
+}
+/* 아이콘 내부 이미지 설정 */
+.content-icon-icons img {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  transition: opacity 0.3s ease-in-out;
+  background: transparent; /* 배경 없애기 ~ 매우 중요 */
+}
+.content-icon-icons:hover,
+.content-icon-icons:focus {
+  background-color: var(--tj-brown);
+}
+/* Hover & Focus 상태에서 이미지 변경 */
+.content-icon-icons:hover img,
+.content-icon-icons:focus img {
+  opacity: 1;
+}
+/* Hover & Focus 상태에서 새로운 이미지 표시 */
+.content-icon-icons::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+.content-icon-icons:hover::after,
+.content-icon-icons:focus::after {
+  opacity: 1;
+  background-image: attr(data-hover url); /* hover 이미지 표시 */
+}
+
+/* TODO: 브랜드 스토리 */
+.brand-story {
+  font-family: var(--font-EF_watermelonSalad);
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  isolation: isolate; /* 배경색과 이미지를 분리 */
+  gap: 10px; 
+  width: 100%;
+  height: 70vh;
+  background-image: url("../img/brand-story-bg.jpg");
+  background-size: cover;
+  background-size: center;
+  background-repeat: no-repeat;
+  background-color: var(--tj-green);
+  background-blend-mode: overlay; /* 배경색과 이미지를 섞어서 표시 */
+}
+.brand-story::after {
+  background-color: var(--tj-green);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.8;
+}
+.brand-story-text {
+  width: 100%;
+  color: var(--tj-white);
+  font-size: 20px;
+  text-align: center;
+  background: transparent;
+  line-height: 2rem;
+  z-index: 2;
+}
+.brand-story-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+  /* padding: 15px; */
+  /* padding: 0.6rem 1.5rem; */
+  height: 2.5rem;
+  width: 9rem;
+  background-color: var(--tj-orange);
+  border: 2px solid var(--tj-orange);
+  border-radius: 2rem;
+  color: var(--tj-white);
+  font-family: var(--font-EF_watermelonSalad);
+  font-size: 1rem; 
+  font-weight: bolder;
+  z-index: 2; /* 텍스트가 이미지 위로 올라오도록 설정 */
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.brand-story-button:hover {
+  /* background: transparent; */
+  background-color: var(--tj-white);
+  border: 2px solid var(--tj-orange);
+  border-radius: 2rem;
+  color: var(--tj-orange);
+  font-weight: bolder;
+}
+.brand-banner {
+  float: left; /* 모든 div 에 float와 width 정의해서 겹침 방지 */
+  width: 100%;
+  height: 70vh;
+}
+.brand-banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+
+
+
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px) {
+  /* TODO: 메뉴 */
+  nav {
+    width: 80%;
+    display: flex;
+  }
+  nav .fab {
+    display: none;
+  } /* 햄버거이미지 pc에서 안보이게 하기 */    
+  .content-icon-icons {
+    /* width: calc(20% - 0.3rem); */
+    width: calc(9% - 1rem);
+  }
+
+  /* 메뉴 추가 */
+  .menu { 
+    width: 90%;
+    height: 3rem;
+    margin: 0; /* 메뉴 우/좌 바깥여백 */
+    padding: 0;
+    display: flex !important; /* 강제 표시 */
+    justify-content: center; /* 메뉴 가운데 정렬 */
+    justify-content: space-between; /* 메뉴 간격 동일하게 */
+    align-items: center; /* 세로 가운데 정렬 */
+    list-style: none;
+    background-color: var(--tj-green);  
+  }
+  .menu li {
+    width: inherit; /* 메뉴 넓이 동일하게 */
+    height: 100%;
+    flex: 1; /* 메뉴 넓이 동일하게 */
+    text-align: center;
+    color: var(--tj-white);
+    background-color: var(--tj-green); 
+  }
+  .menu li a {   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem; 
+    /* flex 사용 (가로/세로 중앙) */
+    color: var(--tj-white);
+    background-color: var(--tj-green); 
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out,
+      border-radius 0.3s ease-in-out;
+  }
+  /* 마우스위(hover) */
+  .menu li a:hover {
+    font-weight: bolder;
+    color: var(--tj-green);
+    background-color: var(--tj-white);
+    border-radius: 3rem;
+  }
+  /* 네비게이션 중앙 로고 */ 
+  .fac {
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tj-green); 
+  } 
+  .fac img {
+    background-color: var(--tj-green); 
+  }
+
+
+  /* TODO: 브랜드 스토리 */ 
+  .brand-story,
+  .brand-banner {
+    float: left;
+    width: 50%;
+    height: 60vh;
+  }
+  .brand-story-text { 
+    line-height: 3rem;
+  }
+  .brand-story-button {
+    height: 3rem;
+    width: 11rem;
+    font-size: 20px;
+  }
+}
+
+/* TODO: 데스크탑 */
+@media screen and (min-width: 1024px) {
+  nav {
+    display: flex !important; /* 강제 표시 */
+  }
+  .content-icon-icons {
+    width: calc(9% - 4.5rem); /* 한 줄에 10개씩 정렬 */
+  }
+  .brand-story,
+  .brand-banner {
+    float: left; /* 왼쪽 정렬 */
+    width: 50%;
+    height: 115vh;
+  }
+}

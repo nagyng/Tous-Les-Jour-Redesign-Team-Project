@@ -1,0 +1,170 @@
+.content-box1 { width: 100vw; height: 100vh; margin: 0 auto;}
+.clear {clear: both;}
+
+/* 나경: 배경색 정상적으로 적용, 한글 폰트 적용 */
+.top-text1, .text1, .text2, .text3, .text4,  .text5, .text6, 
+.top-text2, .description1 , .description2,.description3,
+.description4,.description5,.description6, 
+.name1, .name2, .name3, .name4, .name5, .name6, .article2, .bigbox,
+.move2,.move3,.move4,.move5,.move6  {
+    background-color: transparent;
+    font-family: var(--font-EF_watermelonSalad);
+}  
+
+/* 나경: float left 추가 */
+.article1 { width: 100%; height: 105vh;  background-color: var(--tj-white); float: left;}
+
+.top-text1{text-align: center; font-size: 18px; 
+    font-family: "Carrois Gothic SC", serif;
+    font-weight: bolder; 
+    color: var(--tj-green); margin: 1rem 0;}
+
+.menu1,.menu2,.menu3,.menu4 {width: 60%;  border-radius: 1.5rem; margin: 0.7rem auto;
+ 
+    background-color: var(--white); }
+
+.menu1 > img { max-width: 100%; height: auto; padding: 1rem; background-color: transparent;}
+
+.text1 {font-size: 14px; text-align: center; padding-bottom: 0.5rem;
+    line-height: 1rem; color: var(--tj-green);}
+
+.menu2 > img { max-width: 100%; height: auto; padding: 1rem; background-color: transparent;  }
+.text2 {font-size: 14px; text-align: center; padding-bottom: 0.5rem;
+    line-height: 1rem; color: var(--tj-green); }
+
+.menu3 > img { max-width: 100%; height: auto;  padding: 1rem; background-color: transparent; }
+.text3 {font-size: 14px; text-align: center; padding-bottom: 0.5rem;
+    line-height: 1rem; color: var(--tj-green); }
+
+.menu4 > img { max-width: 100%; height: auto;  padding: 1rem; background-color: transparent; }
+.text4 {font-size: 14px; text-align: center; padding-bottom: 0.5rem;
+        line-height: 1rem; color: var(--tj-green); }
+
+.menu3,.menu4 { display: none; }
+
+.line {display: flex; justify-content: center; clear: both;margin: 1.5rem 0 2.5rem 0;}
+ 
+.button1{ width: 15rem;  height: 2.5rem;  border-radius: 2rem; clear: both; display: flex; align-items: center; justify-content: center;
+    background-color: var(--tj-orange); margin: 0 auto; font-weight: bolder;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out,
+      border-radius 0.3s ease-in-out;
+} 
+.button1:hover {
+    border: 2px solid var(--tj-orange); 
+    background-color: var(--tj-white); color: var(--tj-orange);
+}
+  
+.text5 { color: var(--white); font-size: 15px; }
+
+/* 나경: float left 추가 */
+.article2 { width: 100%; height: 70vh; background-color: var(--tj-brown) !important; float: left;}
+
+.move2,.move3,.move4,.move5,.move6 { 
+    display: none;   
+}
+
+.product-box2 {
+    background-color: var(--tj-brown);
+}
+
+.top-text2{ text-align: center; padding: 1rem 0 ;
+    font-size: 18px; color: var(--tj-white);     font-family: "Carrois Gothic SC", serif; font-weight: bolder; }
+
+.move1 {  width: 70%;  margin: 0 auto; padding: 0.7rem; 
+    background-color: var(--white);border-radius: 2rem;}
+.move1 > img { max-width: 100%; height: auto; }
+.name1 { color: var(--tj-green); text-align: center; font-size: 18px; }
+.description1 { color: var(--tj-brown); text-align: center;font-size: 16px;}
+
+
+.move2 {  width: 40%;  background-color: var(--white);border-radius: 2rem; padding: 0.7rem;
+    margin: 0 auto;}
+.move2 > img { max-width: 100%; height: auto;   }
+.name2{ color: var(--tj-green); text-align: center; }
+.description2 { color: var(--tj-brown); text-align: center;font-size: 14px;}
+
+.move3 {  width: 70%; 
+    background-color: var(--white);border-radius: 2rem; padding: 0.7rem;}
+.move3 > img { max-width: 100%; height: auto; }
+.name3 { color: var(--tj-green); text-align: center; }
+.description3 { color: var(--tj-brown); text-align: center;font-size: 14px;}
+
+.move4 {  width: 70%; 
+    background-color: var(--white);border-radius: 2rem; padding: 0.7rem;}
+.move4 > img { max-width: 100%; height: auto;   }
+.name4 { color: var(--tj-green); text-align: center; }
+.description4 { color: var(--tj-brown); text-align: center;font-size: 14px;}
+
+.move5 {  width: 70%; background-color: var(--white);border-radius: 2rem; padding: 0.7rem;}
+.move5 > img { max-width: 100%; height: auto;  }
+.name5 { color: var(--tj-green); text-align: center; }
+.description5 { color: var(--tj-brown); text-align: center;font-size: 14px;}
+
+.move6 {  width: 70%;  background-color: var(--white);border-radius: 2rem; padding: 0.7rem; }
+.move6 > img { max-width: 100%; height: auto; }
+.name6 { color: var(--tj-green); text-align: center; }
+.description6 { color: var(--tj-brown); text-align: center;font-size: 14px;}
+
+  
+
+.button2{ width: 15rem;  height: 2.5rem;  border-radius: 2rem; clear: both; display: flex; align-items: center; justify-content: center;
+    background-color: var(--tj-green); margin: 2rem auto; font-weight: bolder; 
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out,
+      border-radius 0.3s ease-in-out;
+} 
+.button2:hover {
+    border: 2px solid var(--tj-green); 
+    background-color: var(--tj-white); color: var(--tj-green);}
+
+.text6 { color: var(--white); font-size: 15px;} 
+
+@media screen and (min-width: 768px) {
+.article2 {  height: 93vh;}
+
+.top-text1{font-size: 23px; padding: 1rem 0;}
+.menu1,.menu2 {width: 50%;} 
+.text1,.text2,.text3,.text4  {font-size: 16px;  line-height: 1.5rem;}
+
+.button1{ height: 3rem; } 
+.text5 { font-size: 20px; }
+
+.top-text2{ font-size: 23px; margin: 1rem 0; }
+
+.move1 {  width: 40%; margin-bottom: 1rem;}
+.move2 { display: block; } 
+.description1 { font-size: 14px; }
+
+.button2{ height: 3rem;  margin-top: 4rem;} 
+.text6 { font-size: 20px; }
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) { 
+
+
+.menu3,.menu4{display: block;}
+.menu1,.menu2,.menu3,.menu4{ width: 45%;float: left; margin: 0 1rem 1rem 0;  }
+.text3,.text4  {font-size: 18px; }
+
+
+.product-box1 {width: 40%; height: 81% ; margin: 0 auto ; }
+
+.article2 {  height: 100vh;}
+
+.line{display: none;}
+.move3,.move4,.move5,.move6 { display: block; }
+
+.move1,.move2,.move3,.move4,.move5,.move6 {  width: 30%; float: left; margin: 0 0.5rem 0.5rem 0;  }
+.name1,.name2,.name3,.name4,.name5,.name6 { font-size: 18px;}
+.description1,.description2,.description3,.description4,.description5,.description6{ font-size: 14px;}
+
+
+.product-box2{width: 55%; height: 72%; margin: 0 auto ; }
+
+
+
+
+}
