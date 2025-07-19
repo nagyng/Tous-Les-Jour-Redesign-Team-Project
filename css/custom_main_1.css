@@ -1,3 +1,11 @@
+.recom-title {
+  background-color: var(--tj-brown) !important;
+  color: var(--tj-white);
+}
+.product-menu-box p {
+  font-family: var(--font-EF_watermelonSalad);
+  background-color: transparent;
+}
 * {
   margin: 0;
   padding: 0;
@@ -170,7 +178,10 @@ nav {
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .brand-story-button:hover,
-.new-button:hover {
+.new-button:hover,
+.store-button:hover {
+  text-align: center;
+  margin: auto;
   background-color: var(--tj-orange);
   border: 2px solid var(--tj-orange);
   border-radius: 2rem;
@@ -189,6 +200,13 @@ nav {
 }
 
 /* 새메뉴 */
+.btn-area {
+  width: auto;
+  height: fit-content;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bolder;
+}
 .new-button {
   margin: auto;
   display: flex;
@@ -231,6 +249,199 @@ nav {
   border-radius: 2rem;
   color: var(--tj-white);
   font-weight: bolder;
+}
+
+/* 신메뉴 수정본 */
+.new-product-area {
+  width: 100%;
+  height: 100%;
+}
+.new-product-title-box {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+.new-product-menu-box {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+.new-product-menu {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.product-menu-box {
+  width: 15rem;
+  height: 15rem;
+  margin: auto;
+  overflow: hidden; /* 이미지가 박스 밖으로 나가지 않도록 */
+  background-color: white;
+  border-radius: 3rem; /* 둥근 모서리 */
+  transition: transform 0.3s ease-in-out; /* 호버 효과 */
+}
+.product-menu-box img {
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+  object-fit: cover; /* 이미지 비율 유지 */
+  transition: transform 0.3s ease-in-out; /* 호버 효과 */
+}
+.product-menu-box p {
+  background-color: transparent;
+}
+.new-product-menu2,
+.new-product-menu3,
+.new-product-menu4 {
+  display: none; /* 모바일에서는 안보이게 하기 */
+}
+
+/* 추천 메뉴 수정본 */
+.recom-area,
+.new-product-area {
+  padding-bottom: 4rem;
+}
+.product-menu-box,
+.recom-product-box {
+  margin-bottom: 2rem;
+}
+.recom-area {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--tj-brown);
+}
+.recom-title-box {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: transparent;
+}
+.new-product-title {
+  height: 100%;
+  background-color: transparent;
+  color: var(--tj-green);
+  font-weight: bolder;
+  font-size: 2.5rem;
+  padding: 5rem 0 3rem 0;
+}
+.recom-title {
+  height: 100%;
+  background-color: transparent;
+  color: var(--tj-white);
+  font-weight: bolder;
+  font-size: 2.5rem;
+  padding: 5rem 0 3rem 0;
+}
+.recom-menu-box {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: var(--tj-brown);
+}
+.recom-menu {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: transparent;
+}
+.recom-product-box {
+  width: 15rem;
+  height: 20rem;
+  /* margin: auto; */
+  overflow: hidden; /* 이미지가 박스 밖으로 나가지 않도록 */
+  background-color: white;
+  border-radius: 3rem; /* 둥근 모서리 */
+  transition: transform 0.3s ease-in-out; /* 호버 효과 */
+}
+.recom-product-box:hover,
+.product-menu-box:hover {
+  transform: scale(1.05); /* 호버 시 확대 효과 */
+  color: var(--tj-green);
+}
+.recom-product-box img {
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+  object-fit: cover; /* 이미지 비율 유지 */
+  transition: transform 0.3s ease-in-out; /* 호버 효과 */
+}
+.recom-product-box p,
+.recom-product-box h3 {
+  background-color: transparent;
+  font-family: var(--font-EF_watermelonSalad);
+}
+.recom-product-box h3,
+.product-menu-box p {
+  height: fit-content;
+  font-weight: bold;
+}
+.rd {
+  padding-top: 1rem;
+}
+.recom-menu2,
+.recom-menu3,
+.recom-menu4,
+.recom-menu5,
+.recom-menu6 {
+  display: none; /* 모바일에서는 안보이게 하기 */
+}
+/* 매장 찾기 */
+.store-button {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 10rem;
+  /* background-color: var(--tj-orange); */
+  background: transparent; /* 배경색 없애기 */
+  border: 2px solid var(--tj-orange);
+  border-radius: 2rem;
+  color: var(--tj-orange);
+  font-family: var(--font-EF_watermelonSalad);
+  font-size: 1rem;
+  font-weight: bolder;
+  z-index: 2; /* 텍스트가 이미지 위로 올라오도록 설정 */
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.store-location-area {
+  width: 100%;
+  height: 99vh;
+  background-color: var(--tj-green);
+  margin: auto;
+  display: flex; /* 텍스트 가운데 정렬 */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle; /* 텍스트 가운데 정렬 */
+}
+.store-location-content,
+.store-location-content p,
+.store-location-box {
+  background-color: transparent;
+  margin: auto;
+  vertical-align: middle; /* 텍스트 가운데 정렬 */
+}
+.sltext {
+  color: var(--tj-white);
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: auto;
+  font-family: var(--font-EF_watermelonSalad);
 }
 
 /* TODO: 태블릿 */
@@ -303,7 +514,7 @@ nav {
     background-color: var(--tj-green);
   }
 
-  /* TODO: 브랜드 스토리 */
+  /* 브랜드 스토리 */
   .brand-story,
   .brand-banner {
     float: left;
@@ -317,6 +528,65 @@ nav {
     height: 3rem;
     width: 11rem;
     font-size: 20px;
+  }
+
+  /* 신메뉴 수정본 */
+  .new-product-menu {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .product-menu-box {
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+    overflow: hidden; /* 이미지가 박스 밖으로 나가지 않도록 */
+    background-color: white;
+    border-radius: 3rem; /* 둥근 모서리 */
+    transition: transform 0.3s ease-in-out; /* 호버 효과 */
+  }
+  .product-menu-box img {
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    object-fit: cover; /* 이미지 비율 유지 */
+    transition: transform 0.3s ease-in-out; /* 호버 효과 */
+  }
+  .new-product-menu3,
+  .new-product-menu4,
+  .recom-menu5,
+  .recom-menu6 {
+    display: none;
+  }
+  .new-product-menu2,
+  .recom-menu2,
+  .recom-menu3,
+  .recom-menu4 {
+    display: block; /* 태블릿에서는 보이게 하기 */
+  }
+  .recom-menu {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: transparent;
+  }
+
+  .sltext {
+    color: var(--tj-white);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: auto;
+    font-family: var(--font-EF_watermelonSalad);
   }
 }
 
@@ -342,6 +612,121 @@ nav {
     margin-left: 5rem; /* 왼쪽 여백 */
     margin-top: 15rem; /* 상단 여백 */
     font-size: 1.5rem; /* 폰트 크기 */
+  }
+
+  /* 신메뉴 수정본 */
+  .new-product-area {
+    width: 100%;
+    height: 100%;
+  }
+  .new-product-title-box {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .new-product-menu-box {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .new-product-menu {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .product-menu-box {
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+    overflow: hidden; /* 이미지가 박스 밖으로 나가지 않도록 */
+    background-color: white;
+    border-radius: 3rem; /* 둥근 모서리 */
+    transition: transform 0.3s ease-in-out; /* 호버 효과 */
+  }
+  .product-menu-box img {
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    object-fit: cover; /* 이미지 비율 유지 */
+    transition: transform 0.3s ease-in-out; /* 호버 효과 */
+  }
+  .product-menu-box p {
+    background-color: transparent;
+    font-family: var(--font-EF_watermelonSalad);
+  }
+  .new-product-menu2,
+  .new-product-menu3,
+  .new-product-menu4 {
+    display: block; /* 데스크탑에서는 보이게 하기 */
+  }
+
+  /* 추천 메뉴 수정본 */
+  .recom-area {
+    width: 100%;
+    height: 100%;
+    background-color: var(--tj-brown);
+  }
+  .recom-title-box {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: transparent;
+  }
+  .recom-menu-box {
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    background-color: var(--tj-brown);
+  }
+  .recom-menu {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    gap: 1rem;
+  }
+  .recom-product-box {
+    width: 20rem;
+    height: 22rem;
+    margin: auto;
+    overflow: hidden; /* 이미지가 박스 밖으로 나가지 않도록 */
+    background-color: white;
+    border-radius: 3rem; /* 둥근 모서리 */
+    transition: transform 0.3s ease-in-out; /* 호버 효과 */
+    text-align: center;
+  }
+  .recom-product-box img {
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    object-fit: cover; /* 이미지 비율 유지 */
+    transition: transform 0.3s ease-in-out; /* 호버 효과 */
+  }
+  .recom-product-box p,
+  .recom-product-box h3 {
+    margin: auto;
+    background-color: transparent;
+    font-family: var(--font-EF_watermelonSalad);
+  }
+  .recom-menu2,
+  .recom-menu3,
+  .recom-menu4,
+  .recom-menu5,
+  .recom-menu6 {
+    display: block; /* 데스크탑에서는 보이게 하기 */
   }
 
   /* TODO: 태블릿 복붙 */
@@ -412,5 +797,23 @@ nav {
     height: 3rem;
     width: 7rem;
     font-size: 20px;
+    font-weight: bolder;
+  }
+  .store-button {
+    height: 3rem;
+    width: 12rem;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .sltext {
+    color: var(--tj-white);
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: auto;
+    font-family: var(--font-EF_watermelonSalad);
+  }
+  .recom-menu,
+  .new-product-menu {
+    margin-bottom: 3rem;
   }
 }
