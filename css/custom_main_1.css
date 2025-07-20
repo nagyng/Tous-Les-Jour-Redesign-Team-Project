@@ -87,6 +87,7 @@ nav {
   cursor: pointer;
   position: relative; /* 개별 아이콘에 hover 적용 */
   tabindex: 0; /* focus가 가능하도록 설정 */
+  box-shadow: 1px 3px 10px 3px #3d150413;
 }
 /* 아이콘 내부 이미지 설정 */
 .content-icon-icons img {
@@ -311,6 +312,7 @@ nav {
 .product-menu-box,
 .recom-product-box {
   margin-bottom: 2rem;
+  box-shadow: 1px 3px 10px 3px #2a1a041d;
 }
 .recom-area {
   width: 100%;
@@ -442,6 +444,16 @@ nav {
   line-height: 2rem;
   margin: auto;
   font-family: var(--font-EF_watermelonSalad);
+}
+.dividertext {
+  font-size: 1rem;
+  color: var(--tj-brown);
+  /* font-family: var(--font-EF_watermelonSalad); */
+  /* font-weight: bolder; */
+  margin: auto;
+  padding: 5rem 0 0 0;
+  overflow-x: hidden; /* 텍스트가 넘치지 않도록 */
+  white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 */
 }
 
 /* TODO: 태블릿 */
